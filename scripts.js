@@ -6,26 +6,23 @@ function semaphoreClik() {
   if (redClass === "active") {
     document.getElementById('yellow').className = 'active';
     document.getElementById('red'). className = '';
+    document.getElementById('message').innerText = "Attention!"
     console.log("Red is active");
-  } else {
-    console.log("Red is not active");
-  }
+  } 
 
   if (yellowClass === "active") {
     document.getElementById('green').className = 'active';
     document.getElementById('yellow').className = '';
+    document.getElementById('message').innerText = "Go!"
     console.log("Yellow is active");
-  } else {
-    console.log("Yellow is not active");
-  }
+  } 
   
   if (greenClass === "active") {
     document.getElementById('red').className = 'active';
     document.getElementById('green').className = '';
+    document.getElementById('message').innerText = "Stop!"
     console.log("Green is active");
-  } else {
-    console.log("Green is not active");
-  }
+  } 
 
 }
 
